@@ -1,6 +1,6 @@
 # VMP.NET-Kill
 This program allows you to bypass CRC checking and anti-debugging. Doesn't work when the app is packaged.
-
+The file must be named: "vmp.exe" (and don't delete it!)
 Fix CRC-checking (Token: 0x0600008B):
 ```csharp
 public uint method_0(IntPtr intptr_0, uint uint_1)
