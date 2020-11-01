@@ -1,5 +1,5 @@
 # VMP.NET-Kill
-This program allows you to bypass CRC checking and anti-debugging. 
+This program allows you to bypass CRC checking and anti-debugging. (VMProtect v3.5 build 1213)
 # Doesn't work when the app is packaged(need unpack).
 # The first-file must be named: "vmp.exe" (orig CRC-file checksum)(and don't delete it!)
 
