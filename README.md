@@ -22,4 +22,4 @@ https://yougame.biz/threads/166893/ - guide on RU lang
 
 https://www.sendspace.com/file/a7yptr - tools
 
-### https://skorpion5552012.wistia.com/medias/ohcqnyge4m - video-guide
+### https://youtu.be/zvoY0UOsceM - video-guide
