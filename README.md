@@ -1,6 +1,11 @@
 # VMP.NET-Kill
 
 ###### Guys, please read the README on github before you ask questions.
+- [x] Bypass anti virtual-machine (I'll update it soon)
+- [x] Bypass anti-debugging
+- [x] Bypass CRC
+- [ ] Full unpack vmpacker
+- [ ] Devirtualizer
 # This method will only work when you have already UNPACKED the Assembly. If the Assembly is packaged, it is pointless to try this method bypassing!
 
 This program allows you to bypass CRC checking and anti-debugging. (VMProtect v3.5 build 1213)
