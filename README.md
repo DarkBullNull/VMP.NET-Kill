@@ -1,7 +1,7 @@
 # VMP.NET-Kill
 
 ###### Guys, please read the README on github before you ask questions.
-- [x] Bypass anti virtual-machine (I'll update it soon)
+- [x] Bypass anti virtual-machine
 - [x] Bypass anti-debugging
 - [x] Bypass CRC
 - [ ] Full unpack vmpacker
