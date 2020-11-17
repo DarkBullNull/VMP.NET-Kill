@@ -8,7 +8,7 @@
 - [ ] Devirtualizer
 # This method will only work when you have already UNPACKED the Assembly. If the Assembly is packaged, it is pointless to try this method bypassing!
 
-This program allows you to bypass CRC checking and anti-debugging. (VMProtect v3.5 build 1213)
+This program allows you to bypass CRC checking, anti-debugging and anti Virtual-Machines. (VMProtect v3.5 build 1213)
 
 # The first-file must be named: "vmp.exe" (orig CRC-file checksum)(and don't delete it!)
 
