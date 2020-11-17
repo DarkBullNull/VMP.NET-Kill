@@ -7,7 +7,6 @@ using System.Runtime;
 using System.Threading.Tasks;
 using dnlib.DotNet;
 using dnlib.DotNet.Emit;
-using Microsoft.ExtendedReflection.Metadata.Builders;
 
 namespace VMPKiller
 {
@@ -20,7 +19,6 @@ namespace VMPKiller
 
         void AntiDebug(ref ModuleDefMD moduleDef, string folderPathFile)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             int skipFirstInvoke = 0;
             foreach (var type in moduleDef.Types)
             {
@@ -74,7 +72,7 @@ namespace VMPKiller
                                         indexInvoke += 4;
                                     }
                                     // ### CRC-Check ###
-                                    Console.Write("CRC-check bypassing...");
+                                    Console.WriteLine("CRC-check bypassing...");
                                     var opcodeLdlocS = method.Body.Instructions[indexInvoke - 1].OpCode.ToString();
                                     var indexLdLocS = Int32.TryParse(opcodeLdlocS.Substring(opcodeLdlocS.Length - 1), 
                                         out int index);
@@ -97,7 +95,7 @@ namespace VMPKiller
                                     method.Body.Instructions.Insert(indexInvoke + 5, Instruction.Create(OpCodes.Stelem_Ref));
                                     method.Body.Instructions.Insert(indexInvoke + 6, Instruction.Create(OpCodes.Ldarg_1));
                                     
-                                    Console.Write("Anti-debug bypassing...");
+                                    Console.WriteLine("Anti-debug bypassing...");
                                     // ### NtQueryInformationProcess ###
                                     method.Body.Instructions.Insert(indexInvoke + 11, Instruction.Create(OpCodes.Ldarg_1));
                                     method.Body.Instructions.Insert(indexInvoke + 12, Instruction.Create(OpCodes.Callvirt, moduleDef.Import(typeof(System.Reflection.MemberInfo).GetMethod("get_Name", new Type[] { }))));
@@ -152,7 +150,7 @@ namespace VMPKiller
 
 
                                     method.Body.UpdateInstructionOffsets(); // update offsets
-
+                                    
                                     lastInstruction = method.Body.Instructions[indexInvoke + 6];
                                     method.Body.Instructions[indexInvoke + 1] = Instruction.Create(OpCodes.Brfalse_S, lastInstruction);
                                     
@@ -179,8 +177,6 @@ namespace VMPKiller
                     }
                 }
             }
-            Console.WriteLine(" Success");
-            Console.ResetColor();
         }
     }
 }
