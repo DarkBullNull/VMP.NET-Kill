@@ -4,7 +4,7 @@
 - [x] Bypass anti virtual-machine
 - [x] Bypass anti-debugging
 - [x] Bypass CRC
-- [ ] Full unpack vmpacker
+- [ ] Full unpack vmpacker (Soon 🧐)
 - [ ] Devirtualizer
 # This method will only work when you have already UNPACKED the Assembly. If the Assembly is packaged, it is pointless to try this method bypassing!
 
