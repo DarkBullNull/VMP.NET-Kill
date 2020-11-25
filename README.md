@@ -33,6 +33,4 @@ public uint method_0(IntPtr intptr_0, uint uint_1)
 
 https://yougame.biz/threads/166893/ - guide on RU lang
 
-https://www.sendspace.com/file/a7yptr - tools
-
 ### https://youtu.be/zvoY0UOsceM - video-guide
