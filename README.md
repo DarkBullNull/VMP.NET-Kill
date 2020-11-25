@@ -4,11 +4,17 @@
 - [x] Bypass anti virtual-machine
 - [x] Bypass anti-debugging
 - [x] Bypass CRC
-# This method will only work when you have already UNPACKED the Assembly. If the Assembly is packaged, it is pointless to try this method bypassing!
+- [x] Unpacking. Tools: https://yadi.sk/d/DtpNdfpIOj_cZQ (thank you codecracker! https://github.com/CodeCrackerSND)
 
-This program allows you to bypass CRC checking, anti-debugging and anti Virtual-Machines. (VMProtect v3.5 build 1213)
+This program allows you to unpacking binary, bypass CRC checking, anti-debugging and anti Virtual-Machines. (VMProtect all versions)
 
 # The first-file must be named: "vmp.exe" (orig CRC-file checksum)(and don't delete it!)
+
+Instructions:
+1) Use tools SMD, for unpacking vmp
+2) if needed, use my tools for bypass vmp tricks
+3) wait devirt :D
+
 
 Fix CRC-checking (Look for a class with a similar signature):
 ```csharp
