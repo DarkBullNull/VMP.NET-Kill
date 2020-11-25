@@ -7,7 +7,6 @@
 - [x] Bypass CRC
 - [x] Unpacking. Tools: https://yadi.sk/d/DtpNdfpIOj_cZQ (thank you codecracker! https://github.com/CodeCrackerSND)
 
-This program allows you to unpacking binary, bypass CRC checking, anti-debugging and anti Virtual-Machines. (VMProtect all versions)
 
 # The first-file must be named: "vmp.exe" (orig CRC-file checksum)(and don't delete it!)
 
