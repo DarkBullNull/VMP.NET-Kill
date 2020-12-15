@@ -8,8 +8,6 @@
 - [x] Unpacking. Tools: https://yadi.sk/d/DtpNdfpIOj_cZQ (thank you codecracker! https://github.com/CodeCrackerSND)
 
 
-# The first-file must be named: "vmp.exe" (orig CRC-file checksum)(and don't delete it!)
-
 Instructions:
 1) Use tools SMD, for unpacking vmp
 2) if needed, use my tools for bypass vmp tricks
