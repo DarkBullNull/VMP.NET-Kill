@@ -23,7 +23,7 @@ namespace VMPKiller
             Console.WriteLine("If there are any errors, please create an issue");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("Enter path file (drag and drop): ");
-            var pathFile =  Console.ReadLine();
+            var pathFile =  Console.ReadLine().Replace("\"", "");
             
             Console.WriteLine("Select options:\n" +
                               "\t 1 - Bypass anti-VM\n" +
