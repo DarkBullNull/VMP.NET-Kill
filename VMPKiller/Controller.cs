@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,21 +10,31 @@ namespace VMPKiller
 {
     public class Controller
     {
-        public Controller(ref ModuleDefMD moduleDef, string folderPathFile, int userParams)
+        public Controller(ref ModuleDefMD moduleDef, string pathFile, int userParams)
         {
+            var imageProtectedVanillaFile = Path.GetDirectoryName(pathFile) + @"\vmp.exe";
             if (userParams == 1)
             {
-                BypassVirtualMachine bypassVirtualMachine = new BypassVirtualMachine(ref moduleDef);
+                var bypassVirtualMachine = new BypassVirtualMachine(ref moduleDef);
             }
             else if (userParams == 2)
             {
-                AntiTricks aTricks = new AntiTricks(ref moduleDef, folderPathFile);
+                var aTricks = new AntiTricks(ref moduleDef, imageProtectedVanillaFile);
+                var tryFixCorruptMethods = new FixCorruptMethods(ref moduleDef);
             }
             else if (userParams == 3)
             {
-                AntiTricks aTricks = new AntiTricks(ref moduleDef, folderPathFile);
-                BypassVirtualMachine bypassVirtualMachine = new BypassVirtualMachine(ref moduleDef);
+                var aTricks = new AntiTricks(ref moduleDef, imageProtectedVanillaFile);
+                var bypassVirtualMachine = new BypassVirtualMachine(ref moduleDef);
+                var tryFixCorruptMethods = new FixCorruptMethods(ref moduleDef);
             }
+            else if (userParams == 4)
+            {
+                var tryShowRestoreMethods = new TryRestoreMethods(ref moduleDef, pathFile);
+                Console.WriteLine("Continue?");
+                Console.ReadKey();
+            }
+            
         }
     }
 }

@@ -43,7 +43,8 @@ namespace VMPKiller
 
                             if (countLdcI4_1 == 13)
                             {
-                                Console.WriteLine("Bypass Anti-Virtual-Machine bypassing(EnumSystemFirmwareTables)");
+                                Console.WriteLine("Bypass Anti-Virtual-Machine: \nBypassing(EnumSystemFirmwareTables)");
+                                // C:\Users\skorp\Desktop\vmpKill\clean.vmpAVM1.dem-cleaned.exe
                                 for (var indexInstructions = 0;
                                     indexInstructions < method.Body.Instructions.Count - 2;
                                     indexInstructions++)
