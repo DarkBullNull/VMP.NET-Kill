@@ -1,4 +1,4 @@
-# VMP.NET-Kill V2.0
+# VMP.NET-Kill V2.0 (VMP 1213-1261)
 
 ###### Guys, please read the README on github before you ask questions.
 - [x] Remove mutations. For using, need unpack vmp anti-tamper. Tools: https://yadi.sk/d/OXEqQ_3UfcVLag (thank you wwh1004! https://github.com/wwh1004) WARNING: NEED USE, WHEN ALL METHODBODY != NULL(delete this methods after successfull unpacking)
