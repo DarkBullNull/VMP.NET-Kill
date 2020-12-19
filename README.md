@@ -1,34 +1,20 @@
-# VMP.NET-Kill
+# VMP.NET-Kill V2.0
 
 ###### Guys, please read the README on github before you ask questions.
 - [x] Remove mutations. For using, need unpack vmp anti-tamper. Tools: https://yadi.sk/d/OXEqQ_3UfcVLag (thank you wwh1004! https://github.com/wwh1004) WARNING: NEED USE, WHEN ALL METHODBODY != NULL(delete this methods after successfull unpacking)
-- [x] Bypass anti virtual-machine
+- [x] Bypass anti virtual-machine (old build)
 - [x] Bypass anti-debugging
 - [x] Bypass CRC
-- [x] Unpacking. Tools: https://yadi.sk/d/DtpNdfpIOj_cZQ (thank you codecracker! https://github.com/CodeCrackerSND)
+- [x] Import Protection (new)
+- [x] Unpacking. Tools: https://yadi.sk/d/DtpNdfpIOj_cZQ (thank you codecracker! https://github.com/CodeCrackerSND) or KSDumper - https://github.com/EquiFox/KsDumper
+
 
 
 Instructions:
-1) Use tools SMD, for unpacking vmp
-2) if needed, use my tools for bypass vmp tricks
-3) wait devirt :D
-
-
-Fix CRC-checking (Look for a class with a similar signature):
-```csharp
-public uint method_0(IntPtr intptr_0, uint uint_1)
-    {
-        uint num = 0U;
-        int num2 = 0;
-        while ((long)num2 < (long)((ulong)uint_1))
-        {
-            num = (CURRENT_CLASS.uint_0[(int)(((uint)Marshal.ReadByte(new IntPtr(intptr_0.ToInt64() + (long)num2)) ^ num) & 255U)] ^ num >> 8);
-            num2++;
-        }
-        return ~num;
-    }
-```
+1) Use tools SMD, for unpacking vmp, or KSDumper
+2) use demutator from wwh
+3) use vmp.net-killer
 
 https://yougame.biz/threads/166893/ - guide on RU lang
 
-### https://youtu.be/zvoY0UOsceM - video-guide
+### https://youtu.be/cMw0B6I5uL0 - video-guide UPDATE
