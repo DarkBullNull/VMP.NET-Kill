@@ -16,7 +16,7 @@ namespace VMPKiller
         public TryRestoreMethods(ref ModuleDefMD moduleDef, string pathFile)
         {
             DetectVersion(ref moduleDef);
-            if (VMPVersionIsOld) // if true - version VMP is new
+            if (VMPVersionIsOld) // if true - version VMP is old
             {
                 RestoreDelegatesVariant(ref moduleDef, pathFile);
             }
