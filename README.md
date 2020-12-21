@@ -6,6 +6,7 @@
 - [x] Bypass anti-debugging
 - [x] Bypass CRC
 - [x] Import Protection (new)
+- [x] String Decrypting
 - [x] Unpacking. Tools: https://yadi.sk/d/DtpNdfpIOj_cZQ (thank you codecracker! https://github.com/CodeCrackerSND) or KSDumper - https://github.com/EquiFox/KsDumper
 
 
