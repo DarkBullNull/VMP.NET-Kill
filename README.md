@@ -14,7 +14,8 @@
 Instructions:
 1) Use tools SMD, for unpacking vmp, or KSDumper
 2) use demutator from wwh
-3) use vmp.net-killer
+3) use de4dot
+4) use vmp.net-killer
 
 https://yougame.biz/threads/166893/ - guide on RU lang
 
