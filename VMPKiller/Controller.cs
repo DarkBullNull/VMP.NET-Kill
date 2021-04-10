@@ -30,7 +30,7 @@ namespace VMPKiller
             }
             else if (userParams == 4)
             {
-                var tryShowRestoreMethods = new TryRestoreMethods(ref moduleDef, pathFile);
+                var tryShowRestoreMethods = new RestoreMetadatas(ref moduleDef, pathFile);
                 Console.WriteLine("Continue?");
                 Console.ReadKey();
             }
